@@ -90,7 +90,7 @@ namespace casacore { //# NAMESPACE CASACORE - BEGIN
 
   void MultiFile::fsync()
   {
-    itsIO.fsync();
+    //itsIO.fsync();
   }
 
   void MultiFile::writeHeader()

@@ -176,7 +176,7 @@ void BucketFile::remove()
 
 void BucketFile::fsync()
 {
-    file_p->fsync();
+  //file_p->fsync();
 }
 
 

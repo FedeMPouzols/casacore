@@ -305,7 +305,7 @@ void LockFile::putInfo (const MemoryIO& info) const
                                  SIZEREQID) == Int(leng+infoLeng), AipsError);
     }
     // Do an fsync to achieve NFS synchronization.
-    fsync (itsLocker.fd());
+    //fsync (itsLocker.fd());
 }
 
 Int LockFile::getNrReqId() const
@@ -378,7 +378,7 @@ void LockFile::putReqId (int fd) const
 						    itsReqId.nelements());
         AlwaysAssert(tracePWRITE(fd, (Char *)buffer, leng, 0) == Int(leng),
                      AipsError);
-	fsync (fd);
+	//fsync (fd);
     }
 }
 

@@ -229,7 +229,7 @@ String FiledesIO::fileName() const
 
 void FiledesIO::fsync()
 {
-    ::fsync (itsFile);
+  //::fsync (itsFile);
 }
 
 int FiledesIO::create (const Char* name, int mode)
